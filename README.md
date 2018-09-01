@@ -1,5 +1,5 @@
 myGit
 =====
 
-* First attempt to setup git
+* First project with git and version control
 * First makefile added

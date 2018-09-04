@@ -6,7 +6,7 @@ from the end of the line.
 The cheatsheet:
 
 ## 1. Movement basics
-- *Move few words backwards (lets say you want to move 3 words back)*
+- **Move few words backwards (lets say you want to move 3 words back)**
     * M-3 followed by M-b, negative numeric argument will make movement in opposite direction.
     * Move backward word by word, M-b. Similarly M-f will take you forward word by word.
 
@@ -14,7 +14,7 @@ The cheatsheet:
 - Go at the beginning of the line: C-A
 - Go at the end of the line: C-E
 
-- *Clean up the line:*
+- **Clean up the line:**
     * You can use C-U to clear up to the beginning.
     * C-A C-K to wipe the current line in the terminal
     * Remove the forward words for example, if you are middle of the command: C-K

@@ -86,3 +86,44 @@ fi
 
 echo "End program"
 ```
+You should also know that you can combine conditional execution,
+conditional expressions, and IF/ELIF/ELSE statements. The conditional
+execution operators AND (&&) and OR (||) can be used in an IF or ELIF statement.
+Let’s look at an example using these operators in an IF statement:
+
+```bash
+#!/usr/bin/env bash
+# File: condexif.sh
+
+if [[ $1 -gt 3 ]] && [[ $1 -lt 7 ]]
+then
+  echo "$1 is between 3 and 7"
+elif [[ $1 =~ "Jeff" ]] || [[ $1 =~ "Roger" ]] || [[ $1 =~ "Brian" ]]
+then
+  echo "$1 works in the Data Science Lab"
+else
+  echo "You entered: $1, not what I was looking for."
+fi
+```
+Note that IF/ELIF/ELSE statements can be nested inside of other IF statements.
+Here’s a small example of a program with nested statements:
+
+```bash
+#!/usr/bin/env bash
+# File: nested.sh
+
+if [[ $1 -gt 3 ]] && [[ $1 -lt 7 ]]
+then
+  if [[ $1 -eq 4 ]]
+  then
+    echo "four"
+  elif [[ $1 -eq 5 ]]
+  then
+    echo "five"
+  else
+    echo "six"
+  fi
+else
+  echo "You entered: $1, not what I was looking for."
+fi
+```

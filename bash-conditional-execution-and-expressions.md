@@ -67,3 +67,22 @@ In addition to logical flags there are also logical operators.
 | = | String Equal To | `[[ $password = "pegasus" ]]` |
 | != | String Not Equal To | `[[ $fruit != "banana" ]]` |
 | ! | Not | `[[ ! "apple" =~ ^b ]]` |
+
+
+# if..elif..else..fi statements
+
+Let's write a small program with an if statement:
+
+```bash
+#!/usr/bin/env bash
+# File: simpleif.sh
+
+echo "Start program"
+
+if [[ $1 -eq 4 ]]
+then
+  echo "You entered $1"
+fi
+
+echo "End program"
+```

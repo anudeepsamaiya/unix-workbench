@@ -47,7 +47,7 @@ Conditional expressions are always between double brackets (`[[]]`), and they
 either use logical flags or logical operators.
 
 | Logical Flag | Meaning  | Usage |
-| :----------- | ------- | -----: |
+| :----------- | ------- | ----- |
 | -gt | Greater Than | [[ $planets -gt 8 ]] |
 | -ge | Greater Than or Equal To | [[ $votes -ge 270 ]] |
 | -eq | Equal | [[ $fingers -eq 10 ]] |
@@ -62,7 +62,7 @@ either use logical flags or logical operators.
 In addition to logical flags there are also logical operators.
 
 | Logical Operator | Meaning | Usage |
-| :--------------- | ------- | ----: |
+| :--------------- | ------- | ---- |
 | =~ | Matches Regular Expression | [[ $consonants =~ [aeiou] ]] |
 | = | String Equal To | [[ $password = "pegasus" ]] |
 | != | String Not Equal To | [[ $fruit != "banana" ]] |

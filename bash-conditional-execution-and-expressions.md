@@ -40,3 +40,30 @@ therefore has an exit status other than 0. Let’s take a look at how this works
 echo Athos || echo Porthos && echo Aramis
 echo Gaspar && echo Balthasar || echo Melchior
 ```
+
+# Conditional Expressions
+
+Conditional expressions are always between double brackets (`[[]]`), and they
+either use logical flags or logical operators.
+
+| Logical Flag    | Meaning                       | Usage                   |
+|---------------------------------------------------------------------------|
+| -gt             | Greater Than                  | [[ $planets -gt 8 ]]    |
+| -ge             | Greater Than or Equal To      | [[ $votes -ge 270 ]]    |
+| -eq             | Equal                         | [[ $fingers -eq 10 ]]   |
+| -ne             | Not Equal                     | [[ $pages -ne 0 ]]      |
+| -le             | Less Than or Equal To         | [[ $candles -le 9 ]]    |
+| -lt             | Less Than                     | [[ $wives -lt 2 ]]      |
+| -e              | A File Exists                 | [[ -e $taxes_2016 ]]    |
+| -d              | A Directory Exists            | [[ -d $photos ]]        |
+| -z              | Length of String is Zero      | [[ -z $name ]]          |
+| -n              | Length of String is Non-Zero  | [[ -n $name ]]          |
+
+In addition to logical flags there are also logical operators.
+
+| Logical Operator  | Meaning                       | Usage                         |
+|-----------------------------------------------------------------------------------|
+| =~                | Matches Regular Expression    | [[ $consonants =~ [aeiou] ]]  |
+| =                 | String Equal To               | [[ $password = "pegasus" ]]   |
+| !=                | String Not Equal To           | [[ $fruit != "banana" ]]      |
+| !                 | Not                           | [[ ! "apple" =~ ^b ]]         |
